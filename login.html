@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 | HY-V</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h1>HY-V</h1>
+                <p>다시 오신 것을 환영합니다!</p>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">이메일 주소</label>
+                    <div class="input-wrapper">
+                        <input type="email" id="email" placeholder="name@example.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">비밀번호</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+                </div>
+                <div class="auth-options">
+                    <label class="remember-me">
+                        <input type="checkbox"> 로그인 상태 유지
+                    </label>
+                    <a href="#" class="forgot-password">비밀번호를 잊으셨나요?</a>
+                </div>
+                <button type="submit" class="auth-btn">로그인</button>
+            </form>
+            <div class="auth-footer">
+                계정이 없으신가요? <button class="link-btn" onclick="navigateTo('signup.html')">회원가입</button>
+            </div>
+    <script src="script.js"></script>
+        </div>
+    </div>
+</body>
+</html>
