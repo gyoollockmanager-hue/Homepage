@@ -28,6 +28,30 @@ body {
     overflow-x: hidden;
 }
 
+/* 메인 페이지 전용 배경 스타일 */
+/* main.html의 body에 <body class="main-page"> 처럼 클래스를 추가할 예정입니다 */
+body.main-page {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)),
+        url('bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* 스크롤 시 배경 고정 */
+}
+
+/* 메인 페이지의 카드를 더 투명하고 돋보이게 */
+body.main-page .auth-card {
+    background: rgba(30, 41, 59, 0.4);
+    /* 투명도 높임 */
+    backdrop-filter: blur(20px);
+    /* 블러 효과 강화 */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
 .auth-container {
     width: 100%;
     max-width: 450px;
@@ -50,6 +74,7 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -160,7 +185,8 @@ body {
     color: var(--text-muted);
 }
 
-.auth-footer a, .link-btn {
+.auth-footer a,
+.link-btn {
     all: unset;
     color: var(--primary);
     text-decoration: none;
@@ -169,7 +195,8 @@ body {
     cursor: pointer;
 }
 
-.auth-footer a:hover, .link-btn:hover {
+.auth-footer a:hover,
+.link-btn:hover {
     text-decoration: underline;
 }
 
