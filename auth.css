@@ -32,7 +32,7 @@ body {
 /* main.html의 body에 <body class="main-page"> 처럼 클래스를 추가할 예정입니다 */
 body.main-page {
     background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)),
-        url('bg.png');
+        url('bg.png.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
